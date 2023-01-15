@@ -12,5 +12,10 @@ function fecharModal(event) {
     containerModal.classList.remove('ativo');
 };
 
+function cliqueForaModal(event) {
+       fecharModal(event);
+   };
+
 botaoAbrir.addEventListener('click', abrirModal);
 botaoFechar.addEventListener('click', fecharModal);
+containerModal.addEventListener('click', cliqueForaModal);
