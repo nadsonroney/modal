@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+   <ul>
+    <li><a href="/">Sobre</a></li>
+    <li><a href="/">Produtos</a></li>
+    <li><a data-modal="abrir" href="/">Login</a></li>
+   </ul>
+</nav>
+<section class="modal-container" data-modal="container">
+    <div class="modal">
+        <button data-modal="fechar" class="fechar">X</button>
+        <form action="">
+            <label for="email">Email</label>
+            <input type="text" for="email" id="email">
+            <label for="senha">Senha</label>
+            <input type="password" for="senha" id="senha">
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+</section>
+
+    <script src="script.js"></script>
+</body>
+</html>
