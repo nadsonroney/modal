@@ -7,8 +7,9 @@ function abrirModal(event) {
     containerModal.classList.add('ativo');
   };
 
-function fecharModal() {
-
+function fecharModal(event) {
+    event.preventDefault();
+    containerModal.classList.remove('ativo');
 };
 
 botaoAbrir.addEventListener('click', abrirModal);
